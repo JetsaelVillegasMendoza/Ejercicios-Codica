@@ -44,3 +44,45 @@ Esta tarea no está directamente relacionada con la lección. Pero será útil p
 
 Muestra en la pantalla What Is Dead May Never Die.
 
+## Ejercicio 6
+
+Muestra en la pantalla el resultado de dividir el número 81 entre 9.
+
+## Ejercicio 7
+
+Escribe un programa que calcule la diferencia entre los números 6 y -81 y muestre la respuesta en pantalla.
+
+## Ejercicio 8
+
+Escriba un programa que calcule y muestre en pantalla los valores de las siguientes expresiones matemáticas: "3 elevado a la 5" y "-8 dividido por -4".
+
+## Ejercicio 9
+
+Implementa un programa que calcule y muestre en pantalla el valor de la siguiente expresión:
+
+
+ ```
+8 / 2 + 5 - -3 / 2
+
+ ```
+
+No realices ningún cálculo por tu cuenta; tu programa debe realizar todos los cálculos por sí mismo.
+
+# Ejercicio 10
+
+Dada la expresión:
+
+ ```
+70 * 3 + 4 / 8 + 2.
+
+```
+
+Coloca paréntesis de manera que ambas sumas (3 + 4) y (8 + 2) se calculen primero. Muestra el resultado en la pantalla.
+
+## Ejercicio 11
+
+Calcula y muestra en pantalla el producto de dos números: 0.39 y 0.22
+
+## Ejercicio 12
+
+Imprime en pantalla la suma de infinitos dividida por 10.
