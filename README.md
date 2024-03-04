@@ -86,3 +86,44 @@ Calcula y muestra en pantalla el producto de dos números: 0.39 y 0.22
 ## Ejercicio 12
 
 Imprime en pantalla la suma de infinitos dividida por 10.
+
+## Ejercicio 13
+
+Realiza una operación que resulte en NaN e imprime el resultado en la pantalla utilizando console.log().
+
+## Ejercicio 14
+
+Muestra en pantalla el resultado de la siguiente operación: "la diferencia entre el cuadrado de cinco y el producto de tres y siete". Coloca los paréntesis de manera que no se viole la regla no-mixed-operators.
+
+## Ejercicio 15
+
+Escribe un programa que imprima en la pantalla:
+
+```
+
+"Khal Drogo's favorite word is "athjahakar""
+
+```
+
+## Ejercicio 16
+
+Escribe un programa que muestre en la pantalla:
+
+```
+
+- Did Joffrey agree?
+- He did. He also said "I love using \n".
+
+```
+
+El programa debe usar solo un console.log(), pero el resultado en la pantalla debe verse exactamente como se muestra arriba.
+
+## Ejercicio 17
+
+Muestra en la pantalla:
+
+```
+
+Winter came for the House of Frey.
+
+```

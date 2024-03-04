@@ -53,7 +53,7 @@ x = 70 * (3 + 4) / (8 + 2); //Colocación de paréntesis para indicar qué opera
 
 console.log(x)
 
-//Ejercicio 11
+//Ejercicio 11 //=> 0.0858
 
 x = 0.39 * 0.22;
 
@@ -61,6 +61,33 @@ console.log(x);
 
 //Ejercicio 12
 
-x = (Infinity + Infinity) / 10;
+x = (Infinity + Infinity) / 10; //=> Infinity
 
 console.log(x);
+
+//Ejercicio 13
+
+x = NaN + 1; //=> NaN
+
+console.log(x);
+
+//Ejercicio 14
+    //"la diferencia entre el cuadrado de cinco y el producto de tres y siete"
+
+x = ((5**2) - (3*7)); 
+
+console.log(x);
+
+//Ejercicio 15
+
+console.log ("\"Khal Drogo's favorite word is \"athjahakar\"\"") //=> "Khal Drogo's favorite word is "athjahakar""
+
+//Ejercicio 16
+
+console.log('- Did Joffrey agree? \n- He did. He also said "I love using \\n".')
+
+//Ejercicio 17
+
+console.log("Winter " + "came " + "for " + "the " + "House " + "of " + "Frey" + ".")//=> Winter came for the House of Frey.
+                                    
+                                                                    
