@@ -24,11 +24,12 @@ Muestra en pantalla, uno tras otro, estos tres nombres: Robert, Stannis, Renly.
 
 El resultado en pantalla debe ser:
 
+```
 Robert
-
 Stannis
-
 Renly
+
+```
 
 Utiliza una llamada console.log() para cada nombre.
 
@@ -127,3 +128,62 @@ Muestra en la pantalla:
 Winter came for the House of Frey.
 
 ```
+utilizando la concatenación de palabras.
+
+## Ejercicio 18
+
+En JavaScript, puedes "solicitar" y mostrar en pantalla cualquier carácter de la codificación ASCII. Por ejemplo:
+
+```
+
+console.log(String.fromCharCode(63));
+
+```
+Esto mostrará en pantalla el carácter con el número 63, que es el signo de interrogación ?. De esta manera, puedes mostrar cualquier carácter.
+
+Encuentra una tabla de códigos ASCII en Internet. Puedes usar búsquedas como "tabla de códigos ASCII" o "ascii codes table". Por lo general, en estas tablas los códigos se muestran en varios sistemas de numeración: decimal, binario, octal y hexadecimal. Nos interesa el código decimal (dec o decimal).
+
+Utilizando el ejemplo anterior y la tabla que encontraste, muestra en pantalla los caracteres ~, ^ y % (cada uno en su propia línea).
+
+Por supuesto, puedes "engañar" las pruebas y simplemente hacer algo como console.log('~'), pero eso no sería interesante.
+
+## Ejercicio 19
+
+Crea una variable llamada motto con el contenido What Is Dead May Never Die!. Imprime el contenido de la variable.
+
+## Ejercicio 20
+
+En el ejercicio se define una variable que contiene una cadena de texto. Reasigna el valor de esta variable y asígnale la misma cadena de texto, pero en orden inverso, es decir, coloca los caracteres de la cadena original en orden inverso.
+
+## Ejercicio 21
+
+Crea una variable que describa literalmente "la cantidad de mis hermanos" y asígnale el valor 2. Imprime el contenido de la variable. Después de una verificación exitosa, compara tu nombre con el nombre utilizado en la solución del profesor.
+
+## Ejercicio 22
+
+Encuentra la variable no declarada en el programa y declárala asignándole el valor 'Dragon';
+
+Después de ejecutar el programa, el resultado en la pantalla debería verse así:
+
+```
+
+Targaryen
+and
+Dragon
+
+```
+
+## Ejercicio 23
+
+Escribe un programa que tome una cantidad inicial de euros, almacenada en la variable eurosCount, convierta los euros a dólares y los imprima en la pantalla. Luego, convierte el valor obtenido a yuanes e imprímelos en una nueva línea.
+
+Ejemplo de salida para 100 euros:
+
+```
+
+125
+863.75
+
+```
+
+
