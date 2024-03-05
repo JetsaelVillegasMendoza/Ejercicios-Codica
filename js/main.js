@@ -90,4 +90,41 @@ console.log('- Did Joffrey agree? \n- He did. He also said "I love using \\n".')
 
 console.log("Winter " + "came " + "for " + "the " + "House " + "of " + "Frey" + ".")//=> Winter came for the House of Frey.
                                     
-                                                                    
+//Ejercicio 18
+console.log(String.fromCharCode(126));
+console.log(String.fromCharCode(94));
+console.log(String.fromCharCode(37));
+
+//Ejercicio 19
+let motto = "What Is Dead May Never Die!";
+console.log(motto);
+
+//Ejercicio 20
+let name1 = 'Brienna';
+name1 = 'anneirB';
+console.log(name1);
+
+//Ejercicio 21
+let myBrothersCount = 2;
+console.log(myBrothersCount);
+
+//Ejercicio 22
+let family = 'Targaryen';
+let pet = 'Dragon'; //Variable que no estaba declarada
+
+console.log(family);
+console.log('and');
+console.log(pet);
+
+let who = "dragon's" + 'mother';
+console.log(who);
+
+//Ejercicio 23
+let eurosCount = 100;
+let dollarsPerEuro = 1.25;
+let yuanesPerDollar = 6.91;
+let dollarsCount = eurosCount * dollarsPerEuro;
+let yuansCount = dollarsCount * yuanesPerDollar;
+
+console.log(dollarsCount)
+console.log(yuansCount)

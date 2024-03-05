@@ -68,7 +68,7 @@ Implementa un programa que calcule y muestre en pantalla el valor de la siguient
 
 No realices ningún cálculo por tu cuenta; tu programa debe realizar todos los cálculos por sí mismo.
 
-# Ejercicio 10
+## Ejercicio 10
 
 Dada la expresión:
 
