@@ -186,4 +186,73 @@ Ejemplo de salida para 100 euros:
 
 ```
 
+## Ejercicio 24
 
+Los sitios web envían constantemente correos electrónicos a sus usuarios. Una tarea típica es enviar automáticamente un correo electrónico personalizado, donde el título contendrá el nombre del usuario. Si en algún lugar de la base de datos del sitio se almacena el nombre de la persona como una cadena, la tarea de generar el título se reduce a la concatenación: por ejemplo, es necesario unir la cadena Hola con la cadena que contiene el nombre.
+
+Escribe un programa que genere el título y el cuerpo del correo electrónico utilizando variables ya definidas, y muestra las cadenas resultantes en la pantalla.
+
+Para el título, utiliza las variables firstname y greeting, seguidas de una coma y un signo de exclamación. Muestra esto en la pantalla en el orden correcto.
+
+Para el cuerpo del correo, utiliza las variables info e intro, asegurándote de que la segunda oración esté en una nueva línea.
+
+El resultado en la pantalla se verá así:
+
+```
+
+Hello, Joffrey!
+Here is important information about your account security.
+We couldn't verify your mother's maiden name.
+
+```
+
+Realiza la tarea usando solamente dos console.log().
+
+## Ejercicio 25
+
+Crea dos variables con los nombres "primer número" y "segundo número" en inglés, utilizando lowerCamelCase. Asigna el número 11 a la primera variable y -100 a la segunda. Imprime en pantalla el producto de los números almacenados en las variables resultantes.
+
+El código funcionará con cualquier nombre, y nuestro sistema siempre verifica solamente el resultado en pantalla, por lo que la ejecución de esta tarea es responsabilidad tuya.
+
+## Ejercicio 26
+
+Te has encontrado con el siguiente código que muestra la cantidad total de habitaciones en posesión del actual rey:
+
+```
+let king = 'King Balon the 6th';
+console.log(king + ' has ' + (6 * 17) + ' rooms.');
+
+```
+Como puedes ver, estos son números mágicos: no está claro qué significa el 6 y qué significa el 17. Puedes adivinarlo si conoces la historia de la familia real: cada nuevo rey hereda todos los castillos de sus antepasados y construye un nuevo castillo, una copia exacta del castillo de sus padres.
+
+Esta extraña dinastía simplemente está multiplicando castillos idénticos...
+
+Elimina los números mágicos creando nuevas variables y muestra el texto en la pantalla.
+
+Debería verse así:
+
+```
+King Balon the 6th has 102 rooms.
+
+```
+
+Los nombres de las variables deben transmitir el significado de los números, pero al mismo tiempo deben ser lo suficientemente cortos y concisos para una lectura cómoda.
+
+Recuerda: el código funcionará con cualquier nombre, y nuestro sistema siempre verifica solamente el resultado en la pantalla, por lo que completar esta tarea es tu responsabilidad.
+
+## Ejercicio 27
+
+Crea una constante llamada army, asígnale el valor "the white walkers" e imprime su valor en la pantalla.
+
+## Ejercicio 28
+
+Muestra en la pantalla la cadena "Do you want to eat, <name>?, donde en lugar de <name>" se debe utilizar la constante stark. La salida debe ser la siguiente:
+
+```
+Do you want to eat, Arya?
+
+```
+
+## Ejercicio 29
+
+Muestra en la pantalla el último carácter de la cadena que se encuentra en la constante "name".

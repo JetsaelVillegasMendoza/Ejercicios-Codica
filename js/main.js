@@ -128,3 +128,42 @@ let yuansCount = dollarsCount * yuanesPerDollar;
 
 console.log(dollarsCount)
 console.log(yuansCount)
+
+//Ejercicio 24
+let greeting = 'Hello';
+let firstName = 'Joffrey';
+let intro = 'Here is important information about your account security.';
+let info = "We couldn't verify your mother's maiden name.";
+
+console.log(greeting + ", " + firstName + "!")
+console.log(intro + "\n" + info);
+
+//Ejercicio 25
+let firstNumber = 11;
+let secondNumber = -100;
+
+console.log(firstNumber * secondNumber);
+
+//Ejercicio 26
+let king = 'King Balon the 6th';
+let numberCastle = 6;
+let numberRooms = 17;
+
+let currentRooms = numberCastle * numberRooms;
+
+console.log(king + " has " + currentRooms + " rooms.")
+
+//Ejercicio 27
+const army = "the white walkers";
+
+console.log(army);
+
+//Ejercicio 28
+const stark = 'Arya';
+
+console.log(`Do you want to eat, ${stark}?`);
+
+//Ejercicio 29
+const name = 'Na\nharis';
+
+console.log(name[7]); // => s
