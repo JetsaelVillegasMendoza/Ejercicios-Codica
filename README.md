@@ -281,4 +281,183 @@ Intenta utilizar interpolación: dentro de las llaves puedes colocar no solament
 
 Muestra en pantalla el resultado de la expresión: 7 - (-8 - -2). Intenta hacer que el número 7 sea una cadena de texto en lugar de un número. Experimenta también con otros números.
 
+## Ejercicio 34
 
+En el código del programa se han definido dos constantes que contienen nombres de empresas. Calcula la longitud total de los nombres en caracteres y muéstrala en pantalla.
+
+## Ejercicio 35
+
+Muestra en pantalla el valor absoluto del número que se encuentra en la constante soldiersCount, utilizando la función Math.abs(). Esta función devuelve el valor absoluto del número pasado como argumento. El valor absoluto de un número es el número en sí sin el signo delante.
+
+```
+Math.abs(-3); // 3
+Math.abs(3); // 3
+Math.abs(0); // 0
+
+```
+
+## Ejercicio 36
+
+Ahora es tu turno de mirar la firma de una función en la documentación y entender cómo usarla. Puedes leer la documentación en español, pero un programador debe ser capaz de leer la documentación en inglés. Utiliza diccionarios o traductores si es necesario. Es mejor acostumbrarse desde el principio y mejorar tus habilidades de lectura en inglés, de lo contrario tendrás dificultades en el futuro.
+
+En Math hay una función llamada ceil(). Estudia su documentación.
+
+Escribe un programa que utilice la función Math.ceil() con la constante number y muestre el resultado en la pantalla.
+
+## Ejercicio 37
+
+Redondea el número almacenado en la constante number a dos decimales y muestra el resultado en pantalla.
+
+## Ejercicio 38
+
+Muestra en pantalla la primera y la última letra de la oración que está almacenada en la constante text, en el siguiente formato:
+
+```
+First: N
+Last: t
+
+```
+Intenta crear solamente una constante en la que se almacene el texto necesario antes de imprimirlo en pantalla. En esta lección, estamos practicando la habilidad de construir una expresión compuesta.
+
+## Ejercicio 39
+
+Calcula programáticamente (no mentalmente) el número mínimo entre 3, 10, 22, -3, 0, y muéstralo en pantalla. Utiliza la función Math.min(), que funciona de manera similar a Math.max().
+
+## Ejercicio 40
+
+La función Math.random() devuelve un número aleatorio entre 0 y 1 con varios dígitos decimales. Pero para atender problemas reales, a veces necesitamos obtener números enteros aleatorios, por ejemplo, en el rango de 0 a 10. Implementa el código que imprime precisamente esos números en la pantalla. Para este problema, necesitarás las funciones Math.random() y Math.round().
+
+Intenta resolver este ejercicio en una sola línea.
+
+## Ejercicio 41
+
+El operador typeof permite determinar el tipo del operando pasado. El nombre del tipo se devuelve como una cadena. Por ejemplo, llamar a typeof 'go go go' devolverá la cadena 'string' (number - número).
+
+```
+console.log(typeof 3); // => 'number'
+
+```
+Muestra en la pantalla el tipo del valor de la constante motto.
+
+## Ejercicio 42
+
+Imprime en la pantalla la longitud de la cadena text.
+
+## Ejercicio 43
+
+Convierte la cadena text a minúsculas e imprímela en la pantalla.
+
+##Ejercicio 44
+
+Los datos ingresados por los usuarios a menudo contienen espacios en blanco adicionales al principio o al final de la cadena. Por lo general, se eliminan utilizando el método .trim(), por ejemplo, si era: ' hello\n ', ahora es: 'hello'.
+
+Actualiza la variable firstName asignándole el mismo valor, pero procesado con el método .trim(). Imprime en pantalla el resultado obtenido.
+
+## Ejercicio 45
+
+Muestra en la pantalla la primera y última letra de la oración almacenada en la constante text, en el siguiente formato:
+
+```
+First: N
+Last: t
+
+```
+Tu tarea es extraer estos caracteres de la cadena y colocarlos dentro de console.log(), sin utilizar variables intermedias.
+
+## Ejercicio 46
+
+Utiliza el método slice() para obtener una parte de la oración almacenada en la constante text, desde el carácter 5 hasta el carácter 15, inclusive. Luego, procesa la subcadena obtenida con el método .trim() y muestra en pantalla la longitud de la subcadena resultante. Realiza estos métodos en cadena sin crear variables intermedias.
+
+## Ejercicio 47
+
+Implementa una función llamada printMotto() que mostrará en la pantalla la frase "Winter is coming".
+
+```
+printMotto(); // => Winter is coming
+
+```
+
+En los ejercicios en los que se requiere implementar una función, no es necesario llamar a esa función. Las pruebas automatizadas se encargarán de llamarla y comprobar su funcionalidad. El ejemplo de llamada anterior se muestra sólo para que entiendas cómo se utilizará tu función.
+
+## Ejercicio 48
+
+Implementa la función sayHurrayThreeTimes(), que devuelve la cadena 'hurray! hurray! hurray!'.
+
+## Ejercicio 49
+
+Completa la función truncate(), que recorta una cadena pasada como parámetro hasta un número específico de caracteres, agrega puntos suspensivos al final y devuelve la cadena resultante. Esta lógica se utiliza a menudo en sitios web para mostrar texto largo de forma abreviada.
+
+La función recibe dos parámetros:
+
+La cadena que se debe recortar
+El número de caracteres que se deben conservar
+Aquí tienes un ejemplo de cómo debería funcionar la función que escribas:
+
+```
+// Pasando el texto directamente
+// Recortando el texto, dejando 2 caracteres
+truncate('hexlet', 2); // he...
+
+// A través de una variable
+const text = 'it works!';
+// Recortando el texto, dejando 4 caracteres
+truncate(text, 4); // it w...
+
+```
+
+Debes implementar la función truncate() por tu cuenta, en JavaScript no existe una función así. Puedes implementar esta función de diferentes maneras, sólo te daremos una pista. Para resolverlo de esta manera, necesitarás extraer una subcadena de la cadena pasada como primer parámetro de la función. Utiliza el método slice() para hacerlo. Piensa, según la tarea, desde qué índice y hasta qué índice debes extraer la subcadena.
+
+```
+const word = 'welcome';
+// Puedes pasar los parámetros al método a través de variables
+const index = 3;
+word.slice(0, indice); // wel
+
+```
+Desde el punto de vista del sistema de evaluación, no importa qué método utilices para implementar la función truncate() internamente, lo importante es que cumpla con la tarea planteada.
+
+## Ejercicio 50
+
+Implementa la función getHiddenCard(), que recibe como entrada el número de una tarjeta de crédito (compuesto por 16 dígitos) como una cadena y devuelve su versión oculta, que se puede utilizar en el sitio web para mostrarla. Si la tarjeta original tenía el número 2034399002125581, entonces la versión oculta se verá así ****5581. En otras palabras, la función reemplaza los primeros 12 caracteres por asteriscos. El número de asteriscos se controla mediante el segundo parámetro opcional. El valor predeterminado es 4.
+
+```
+// La tarjeta de crédito se pasa como una cadena
+getHiddenCard('1234567812345678', 2); // **5678
+getHiddenCard('1234567812345678', 3); // ***5678
+getHiddenCard('1234567812345678');    // ****5678
+getHiddenCard('2034399002121100', 1); // *1100
+
+```
+
+Para completar la tarea, necesitarás el método repeat() de la cadena, que repite la cadena un número determinado de veces.
+
+```
+'+'.repeat(5); // +++++
+'o'.repeat(3); // ooo
+
+```
+
+## Ejercicio 51
+
+Implementa la función capitalize(), que recibe una cadena no vacía y convierte la primera letra de la primera palabra a mayúscula:
+
+```
+const name = 'arya';
+console.log(capitalize(name)); // => Arya
+
+```
+
+Para obtener una subcadena (o un carácter) de una cadena, utiliza el método slice():
+
+```
+'welcome'.slice(2, 5); // lco
+
+```
+
+Para convertir una cadena a mayúsculas, utiliza el método toUpperCase():
+
+
+```
+'welcome'.toUpperCase(); // WELCOME
+
+```

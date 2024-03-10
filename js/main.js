@@ -18,12 +18,10 @@ console.log('What Is Dead May Never Die.');
 
 //Ejercicio 6
 let x = 81 / 9; //=> 9
-
 console.log(x);
 
 //Ejercicio 7
 x = 6 - (-81);
-
 console.log(x);
 
 //Ejercicio 8
@@ -35,7 +33,6 @@ console.log(y);
 
 //Ejercicio 9
 y = ((8 / 2) + 5) - (-3 / 2); //=> 10.5
-
 console.log(y);
 
 //Ejercicio 10
@@ -46,23 +43,19 @@ console.log(x)
 
 //Ejercicio 11 //=> 0.0858
 x = 0.39 * 0.22;
-
 console.log(x);
 
 //Ejercicio 12
 x = (Infinity + Infinity) / 10; //=> Infinity
-
 console.log(x);
 
 //Ejercicio 13
 x = NaN + 1; //=> NaN
-
 console.log(x);
 
 //Ejercicio 14
     //"la diferencia entre el cuadrado de cinco y el producto de tres y siete"
 x = ((5**2) - (3*7)); 
-
 console.log(x);
 
 //Ejercicio 15
@@ -134,32 +127,26 @@ let numberCastle = 6;
 let numberRooms = 17;
 
 let currentRooms = numberCastle * numberRooms;
-
 console.log(king + " has " + currentRooms + " rooms.")
 
 //Ejercicio 27
 const army = "the white walkers";
-
 console.log(army);
 
 //Ejercicio 28
 const stark = 'Arya';
-
 console.log(`Do you want to eat, ${stark}?`);
 
 //Ejercicio 29
-const name = 'Na\nharis';
-
-console.log(name[7]); // => s
+const nameCharacter = 'Na\nharis';
+console.log(nameCharacter[7]); // => s
 
 //Ejercicio 30
 let number = -0.304;
-
 console.log(number)
 
 //Ejercicio 31
 let sinEspecificar;
-
 console.log(sinEspecificar);
 
 //Ejercicio 32
@@ -180,3 +167,121 @@ const exp = "7" - ((-8) - (-2)); //=> 13 Porque el operaddor "-" convierte la ca
 
 console.log (exp);
 
+//Ejercicio 34
+const company1 = 'Apple';
+const company2 = 'Samsung';
+
+const cadenaNombres = company1 + company2;
+const result = cadenaNombres.length;
+
+console.log(result);
+
+//Ejercicio 35
+const soldiersCount = -2309;
+console.log(Math.abs(soldiersCount));
+
+//Ejercicio 36
+const numberDecimal = 923.2238;
+let roundedNumber = Math.ceil(numberDecimal);
+
+console.log(roundedNumber);
+
+//Ejercicio 37
+number = 10.1234;
+console.log(number.toFixed(2))
+
+//Ejercicio 38
+let textChain = 'Never forget what you are, for surely the world will not';
+const firstLastIndex = "First: "  + textChain[0] + "\n" + "Last: " + textChain[textChain.length - 1];
+
+console.log(firstLastIndex);
+
+//Ejercicio 39
+let arrayNumbers = [3, 10, 22, -3, 0];
+console.log(Math.min(...arrayNumbers));
+
+//Ejercicio 40
+console.log(Math.round(Math.random() * 10));
+
+//Ejercicio 41
+motto = 'Family, Duty, Honor';
+console.log(typeof(motto));
+
+//Ejercicio 42
+let text = 'a mind needs books as a sword needs a whetstone, if it is to keep its edge.';
+console.log(text.length);
+
+//Ejercicio 43
+text = 'a MIND needs Books as a Sword needS a WHETSTONE, if it is to keep its edge.';
+const lowerText = text.toLowerCase();
+
+console.log(lowerText);
+
+//Ejercicio 44
+firstName = '  Grigor   \n';
+firstName = firstName.trim();
+
+console.log(firstName);
+
+//Ejercicio 45
+textChain = 'Never forget what you are, for surely the world will not';
+console.log("First: "  + textChain[0] + "\n" + "Last: " + textChain[textChain.length - 1]);
+
+//Ejercicio 46
+const text2 = 'When \t\n you play a \t\n game of thrones you win or you die.';
+console.log(text2.slice(5, 15).trim().length);
+
+//Ejercicio 47
+motto = "Winter is coming";
+
+function printMotto() {
+    console.log(motto);
+}
+
+printMotto();
+
+//Ejercicio 48
+const sayHurrayThreeTimes = () => {
+    return "hurray! hurray! hurray!"
+ }
+ 
+const hurray = sayHurrayThreeTimes()
+console.log(hurray);
+ 
+//Ejercicio 49
+const truncate = (text, length) =>{
+    let slicedText = text.slice(0, length);
+    return slicedText;
+}
+
+text = "Jetsael"
+let length = 4
+console.log(truncate(text, length))
+
+//Ejercicio 50
+let card = "";
+
+const getHiddenCard = (card, asterisk = 4)=>{
+    let hiddingChars = "*".repeat(asterisk);
+    card = card.slice(-4);
+    let hiddenCard = hiddingChars + card;
+
+    return hiddenCard;
+}
+
+card = '1234567812345678';
+console.log(getHiddenCard(card));
+
+//Ejercicio 51
+name1 = "";
+
+const capitalize = (name1) => {
+    slicedChar = name1.slice(0,1);
+    slicedName1 = name1.slice(1, name1.length);
+    finalName = slicedChar.toUpperCase() + slicedName1;
+
+    return finalName;
+}
+
+name1 = "peter";
+console.log(capitalize(name1));
