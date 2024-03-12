@@ -2,7 +2,6 @@
 console.log('Hello, World')
 
 //Ejercicio 2
-
     //You know nothing, Jon Snow!
 
 //Ejercicio 3
@@ -285,3 +284,72 @@ const capitalize = (name1) => {
 
 name1 = "peter";
 console.log(capitalize(name1));
+
+//Ejercicio 52
+const isPensioner = (age) => age >= 60;
+console.log(isPensioner (61));
+console.log(isPensioner (59));
+
+//Ejercicio 53
+const isMister= (type) => type === 'Mister';
+console.log(isMister('Mister'));
+console.log(isMister('Sea'));
+
+
+//Ejercicio 54
+const isInternationalPhone = (string) => {
+    let firstCharacter = "+";
+    let firstDigit = string[0];
+    return firstCharacter === firstDigit;
+  };
+
+  console.log(isInternationalPhone("+5524222051"));
+  console.log(isInternationalPhone("5524222051"));
+
+//Ejercicio 55
+const isLeapYear = (year) => {
+    let result = (year % 400 == 0 || year % 4 == 0 && year % 100 !== 0)
+    return result
+  };
+
+console.log(isLeapYear(2018));
+console.log(isLeapYear(2017));
+console.log(isLeapYear(2016));
+
+
+//Ejercicio 56
+function isPalindrome(word) {
+    const reversedWord = word.toLowerCase().split('').reverse().join('');
+    return word.toLowerCase() === reversedWord;
+}
+
+function isNotPalindrome(word) {
+    return !isPalindrome(word);
+}
+
+
+console.log(isPalindrome('ala'));
+console.log(isPalindrome('radar'));
+console.log(isPalindrome('hexlet'));
+console.log(isPalindrome('AlA'));
+
+console.log(isNotPalindrome('ala'));
+console.log(isNotPalindrome('radar')); 
+console.log(isNotPalindrome('hexlet')); 
+console.log(isNotPalindrome('AlA'));   
+
+//Ejercicio 57
+let str = "Hexlet"
+
+function getLetter(str, position) {
+    if(position > 0  && position <= str.length){
+        return str[position - 1];
+    } else{
+        return "";
+    }
+}
+
+console.log(getLetter(str, 11));
+console.log(getLetter(str, 1));  
+console.log(getLetter(str, 0));  
+console.log(getLetter(str, 6));

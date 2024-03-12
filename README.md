@@ -461,3 +461,114 @@ Para convertir una cadena a mayúsculas, utiliza el método toUpperCase():
 'welcome'.toUpperCase(); // WELCOME
 
 ```
+
+## Ejercicio 52 
+
+Escribe una función llamada isPensioner() que reciba un parámetro, la edad de una persona, y determine si es jubilada. Se considera jubilada a una persona que tiene 60 años o más.
+
+Ejemplos de uso:
+
+```
+isPensioner(75); // true
+isPensioner(18); // false
+
+```
+
+## Ejercicio 53
+
+Escriba una función isMister() que tome una cadena y verifique si es la palabra 'Mister'.
+
+Ejemplos de llamadas:
+
+```
+isMister('Mister'); // true
+isMister('Miss');   // false
+
+```
+
+## Ejercicio 54
+
+Implementa una función que verifique el formato de un número de teléfono especificado. Si el teléfono comienza con un +, significa que está en formato internacional.
+
+
+```
+isInternationalPhone('89602223423'); // false
+isInternationalPhone('+79602223423'); // true
+
+```
+
+## Ejercicio 55
+
+Implementa la función isLeapYear(), que determina si un año es bisiesto o no. Un año es bisiesto si es divisible (es decir, no tiene residuo) por 400 o si es divisible por 4 y no es divisible por 100. Como puedes ver, toda la lógica necesaria ya está incluida en la definición, sólo falta convertirla en código:
+
+
+```
+isLeapYear(2018); // false
+isLeapYear(2017); // false
+isLeapYear(2016); // true
+
+```
+
+Puedes verificar la divisibilidad de la siguiente manera:
+
+```
+// % - devuelve el residuo de la división del operando izquierdo por el operando derecho
+// Verifica si number es divisible por 10
+number % 10 === 0
+
+// Verifica si number no es divisible por 10
+number % 10 !== 0
+
+```
+
+## Ejercicio 56
+
+En esta lección, deberás implementar dos funciones: isPalindrome() e isNotPalindrome()
+
+La función isPalindrome() determina si una palabra es un palíndromo o no. Un palíndromo es una palabra que se lee igual en ambos sentidos.
+
+```
+isPalindrome('ala'); // true
+isPalindrome('radar'); // true
+isPalindrome('hexlet'); // false
+
+// Las palabras pueden ser pasadas a la función en cualquier caso
+// Por lo tanto, primero debes convertir la palabra a minúsculas word.toLowerCase()
+isPalindrome('ala'); // true
+
+```
+
+Para determinar si una palabra es un palíndromo, debes invertir la cadena y compararla con la original. Para ello, utiliza la función reverse()
+
+```
+reverse('mama'); // mama
+
+```
+
+La función isNotPalindrome() verifica que una palabra NO sea un palíndromo:
+
+```
+Para ello, llama a la función isPalindrome() dentro de isNotPalindrome() y aplica la negación.
+
+```
+
+# Ejercicio 57
+
+Implementa la función getLetter(), que extrae el carácter especificado (por su número de orden, no por su índice) de la cadena dada y lo devuelve. Si no existe dicho carácter, la función devuelve una cadena vacía.
+
+Ejemplos de uso:
+
+```
+const name = 'Hexlet';
+
+// El acceso normal devuelve undefined
+name[10]; // undefined
+
+// El carácter 11 corresponde al índice 10
+getLetter(name, 11); // ''
+
+getLetter(name, 1); // 'H'
+getLetter(name, 0); // ''
+getLetter(name, 6); // 't'
+
+```
