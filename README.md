@@ -572,3 +572,117 @@ getLetter(name, 0); // ''
 getLetter(name, 6); // 't'
 
 ```
+
+## Ejercicio 58
+
+Implementa la función guessNumber(), la cual recibe un número y verifica si es igual al número dado (supongamos que es 42). Si es igual, la función debe devolver la cadena 'You win!', de lo contrario, debe devolver la cadena 'Try again!'.
+
+
+```
+guessNumber(42) // You win!
+guessNumber(61) // Try again!
+
+```
+
+## Ejercicio 59
+
+Implementa la función normalizeUrl(), que realiza lo que se conoce como normalización de datos. Recibe una dirección de un sitio web y devuelve la misma con https:// al principio.
+
+La función acepta direcciones en forma de DIRECCIÓN o https://DIRECCIÓN, pero siempre devuelve la dirección en forma de https://DIRECCIÓN.
+
+Puedes usar el método startsWith() para verificar si una cadena comienza con el prefijo https://. Luego, en base a eso, agregar o no agregar https://.
+
+Ejemplos de llamadas:
+
+```
+normalizeUrl("google.com"); // "https://google.com"
+normalizeUrl("https://ai.fi"); // "https://ai.fi"
+
+```
+
+## Ejercicio 60
+
+En el mapa electrónico de Westeros que Sam implementó, los aliados de los Stark se representan con un círculo verde, los enemigos con un círculo rojo y las familias neutrales con un círculo gris.
+
+Escribe una función para Sam llamada whoIsThisHouseToStarks() que reciba el apellido de una familia y devuelva uno de los tres valores: 'friend', 'enemy', 'neutral'.
+
+Reglas de determinación:
+
+    - Amigos ('friend'): 'Karstark', 'Tally'
+    - Enemigos ('enemy'): 'Lannister', 'Frey'
+    - Todas las demás familias se consideran neutrales
+
+Ejemplos de llamadas:
+
+```
+whoIsThisHouseToStarks('Karstark'); // friend
+whoIsThisHouseToStarks('Frey');     // enemy
+whoIsThisHouseToStarks('Joar');     // neutral
+whoIsThisHouseToStarks('Ivanov');   // neutral
+
+```
+
+## Ejercicio 61
+
+Implementa la función convertText(), que recibe una cadena de texto y, si la primera letra no está en mayúscula, devuelve la versión invertida de la cadena original. Si la primera letra está en mayúscula, la función devuelve la cadena sin cambios. Si se pasa una cadena vacía como argumento, la función debe devolver una cadena vacía.
+
+Ejemplos de uso:
+
+```
+convertText('Hello'); // Hello
+convertText('hello'); // olleh
+
+// No olvides tener en cuenta la cadena vacía
+convertText(''); // ''
+
+```
+
+Puedes invertir una cadena utilizando la función reverse(). Debes pasar la cadena que deseas invertir como argumento:
+
+```
+const result = reverse('Hello!');
+console.log(result); // => !olleH
+
+```
+
+Hay diferentes enfoques para resolver este problema. Es posible que necesites el método toUpperCase() y la capacidad de obtener un carácter de una cadena (por ejemplo, str[0]).
+
+Intenta escribir dos versiones de la función: una con un if-else normal y otra con un operador ternario.
+
+Consejo: piensa en qué verificación debes hacer primero: si la primera letra es mayúscula o si la cadena está vacía. ¿Qué es más importante?
+
+## Ejercicio 62
+
+Implementa la función getNumberExplanation(), que recibe un número como entrada y devuelve una explicación para ese número. Si no hay una explicación para el número, se devuelve just a number. Solo hay explicaciones para los siguientes números:
+
+     - 666 = devil number
+     - 42 = answer for everything
+     - 7 = prime number
+
+Ejemplos de llamadas a la función:
+
+```
+getNumberExplanation(8);   // just a number
+getNumberExplanation(666); // devil number
+getNumberExplanation(42);  // answer for everything
+getNumberExplanation(7);   // prime number
+
+```
+
+## Ejercicio 63
+
+Modifica la función printNumbers() para que muestre los números en orden inverso. Para hacerlo, debes empezar desde el límite superior y disminuir el contador en lugar de aumentarlo en el cuerpo del bucle.
+
+```
+printNumbers(4);
+
+```
+
+```
+4
+3
+2
+1
+finished!
+
+```

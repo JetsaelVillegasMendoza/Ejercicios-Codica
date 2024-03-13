@@ -353,3 +353,96 @@ console.log(getLetter(str, 11));
 console.log(getLetter(str, 1));  
 console.log(getLetter(str, 0));  
 console.log(getLetter(str, 6));
+
+//Ejercicio 58
+function guessNumber(number) {
+    if(number === 42){
+        return "You win!";
+    } else{
+        return "Try again!";
+    }
+}
+
+console.log(guessNumber(42));
+console.log(guessNumber(4));
+
+//Ejercicio 59
+
+function normalizeUrl(direction) {
+    if(direction.startsWith("https://")){
+        return direction;
+    } else{ 
+        return "https://" + direction;
+    }
+}
+
+console.log(normalizeUrl("google.com")); // =>"https://google.com"
+console.log(normalizeUrl("https://ai.fi")); // => "https://ai.fi"
+
+//Ejercicio 60
+function whoIsThisHouseToStarks(familyName) {
+    if(familyName === "Karstark" || familyName === "Tally"){
+        return "friend";
+    } else if(familyName === "Lannister" || familyName === "Frey"){
+        return "enemy";
+    } else{
+        return "neutral";
+    }
+}
+
+console.log(whoIsThisHouseToStarks('Karstark'));
+console.log(whoIsThisHouseToStarks('Frey'));
+console.log(whoIsThisHouseToStarks('Joar'));
+console.log(whoIsThisHouseToStarks('Ivanov'));
+
+//Ejercicio 61
+    //Solución 1
+function convertText(inputText) {
+    if (inputText === '') {
+        return '';
+    } else if (inputText[0] === inputText[0].toUpperCase()) {
+        return inputText;
+    } else {
+        return inputText.split('').reverse().join('');
+    }
+}
+
+    //Solución 2
+function convertText(inputText) {
+    return (inputText === '') ? '' : (inputText[0] === inputText[0].toUpperCase()) ? inputText : inputText.split('').reverse().join('');
+}
+
+console.log(convertText('Hello'));  // => Hello
+console.log(convertText('hello'));  // => olleh
+console.log(convertText(''));       // => ''
+
+//Ejercicio 62
+function getNumberExplanation(number) {
+    switch (number) {
+        case 666:
+          return 'devil number';
+        case 42:
+          return 'answer for everything';
+        case 7:
+          return 'prime number';
+        default:
+            return 'just a number';
+    }
+}
+
+console.log(getNumberExplanation(8));   //=>  just a number
+console.log(getNumberExplanation(666)); //=>  devil number
+console.log(getNumberExplanation(42));  //=>  answer for everything
+console.log(getNumberExplanation(7));   //=>  prime number
+
+//Ejercicio 63
+function printNumbers(lastNumber)  {
+    let i = lastNumber;
+    while(i >= 1){
+        console.log(i);
+        i--;
+    }
+    console.log("finished!");
+}
+
+printNumbers(4);
