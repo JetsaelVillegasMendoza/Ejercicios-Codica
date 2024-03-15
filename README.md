@@ -686,3 +686,42 @@ printNumbers(4);
 finished!
 
 ```
+
+## Ejercicio 64
+
+Implementa la función multiplyNumbersFromRange(), que multiplica los números en un rango especificado, incluyendo los límites del rango. Ejemplo de llamada:
+
+```
+multiplyNumbersFromRange(1, 5); // 1 * 2 * 3 * 4 * 5 = 120
+multiplyNumbersFromRange(2, 3); // 2 * 3 = 6
+multiplyNumbersFromRange(6, 6); // 6
+
+```
+
+## Ejercicio 65
+
+Implementa la función joinNumbersFromRange(), que une todos los números de un rango en una cadena:
+
+```
+joinNumbersFromRange(1, 1); // 1
+joinNumbersFromRange(2, 3); // 23
+joinNumbersFromRange(5, 10); // 5678910
+
+```
+
+## Ejercicio 66
+
+Implementa la función printReversedWordBySymbol(), que imprime la palabra pasada como argumento carácter por carácter, como se muestra en el ejemplo de la teoría, pero en orden inverso.
+
+```
+const word = 'Hexlet';
+
+printReversedWordBySymbol(word);
+// => t
+// => e
+// => l
+// => x
+// => e
+// => H
+
+```

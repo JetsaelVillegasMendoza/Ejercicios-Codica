@@ -446,3 +446,47 @@ function printNumbers(lastNumber)  {
 }
 
 printNumbers(4);
+
+//Ejercicio 64
+function multiplyNumbersFromRange(start, finish) {
+    let i = start;
+    let multiply = 1; //---> Se requiere inicializar con el elemento neutro de la operación
+  
+    while (i <= finish) { 
+        multiply = multiply * i; 
+      i++; 
+    }
+
+    return multiply;
+}
+
+console.log(multiplyNumbersFromRange(1,5)); // => 1 * 2 * 3 * 4 * 5 = 120
+console.log(multiplyNumbersFromRange(2,3)); // => 2 * 3 = 6
+console.log(multiplyNumbersFromRange(6,6)); // => 6
+
+//Ejercicio 65
+function joinNumbersFromRange(start, finish) {
+    let strNumber = ""; //---> Se requiere inicializar con el elemento neutro de la contatenación
+    
+    while(start <= finish){
+        strNumber = strNumber + start.toString();
+        start++
+    }
+
+    return strNumber;
+}
+
+console.log(joinNumbersFromRange(1,1)); // => 1
+console.log(joinNumbersFromRange(2,3)); // => 23
+console.log(joinNumbersFromRange(5,10)); // => 5678910
+
+//Ejercicio 66
+function printReversedWordBySymbol(word) {
+    let iterator = word.length -1;
+
+    while(iterator >= 0){
+        console.log(word[iterator]);
+        iterator--;
+    }
+}
+printReversedWordBySymbol("hexlet");
