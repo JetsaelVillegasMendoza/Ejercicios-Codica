@@ -490,3 +490,114 @@ function printReversedWordBySymbol(word) {
     }
 }
 printReversedWordBySymbol("hexlet");
+
+//Ejercicio 67
+const countChars = (str, char) => {
+    let i = 0;
+    let count = 0;
+
+    while (i < str.length) {
+       str = str.toLowerCase();
+       char = char.toLowerCase();
+
+      if (str[i] === char) {
+        count = count + 1;
+      }//if else
+
+      i = i + 1;
+    }//while
+  
+    return count;
+  };//countStars
+
+  console.log(countChars('jetsael', 'a')); // => 2
+  console.log(countChars('HexlEt', 'e')); // => 2
+ 
+  //Ejercicio 68
+  function even(str) {
+    let result = "";
+    let i = 1;
+    while (i < str.length) {
+      result += str[i]; 
+      i += 2;
+    }
+    return result;
+  }
+  
+  console.log(even("jetsael")); 
+
+  //Ejercicio 69
+  function filterString(str, char) {
+    let result = "";
+    let i = 0;
+
+    while (i < str.length) {
+
+      if (str[i] !== char) {
+        result += str[i];
+      }
+
+      i++;
+    }
+
+    return result;
+  }
+  
+  const str1 = 'If I look back I am lost';
+  console.log(filterString(str1, 'I')); 
+  
+  const str2 = 'zz Zorro';
+  console.log(filterString(str2, 'Z')); 
+
+  //Ejercicio 70
+  function makeItFunny(text, n) {
+    if (typeof text !== 'string' || typeof n !== 'number' || n <= 0) {
+        return "Entrada inválida";
+    }
+
+    const newText = text.split('').map((char, index) => {
+        if ((index + 1) % n === 0) {
+            return char.toUpperCase();
+        }
+        return char;
+    }).join('');
+
+    return newText;
+}
+
+const texto = 'I never look back';
+console.log(makeItFunny(texto, 3)); //=> 'I NevEr LooK bAck'
+
+//Ejercicio 71
+function hasChar(str, char) {
+    return str.includes(char);
+}
+
+console.log(hasChar('Hexlet', 'H')); // true
+console.log(hasChar('Hexlet', 'h')); // false
+console.log(hasChar('Awesomeness', 'm')); // true
+console.log(hasChar('Awesomeness', 'd')); // false
+
+//Ejercicio 72
+function encrypt(message) {
+    let encryptedMessage = '';
+
+    for (let i = 0; i < message.length - 1; i += 2) {
+        encryptedMessage += message[i + 1] + message[i];
+    }
+
+    // Si la longitud de la cadena es impar, el último carácter permanece en su lugar
+    if (message.length % 2 !== 0) {
+        encryptedMessage += message[message.length - 1];
+    }
+
+    return encryptedMessage;
+}
+
+console.log(encrypt('move'));    // Output: omev
+console.log(encrypt('attack'));  // Output: taatkc
+console.log(encrypt('go!'));     // Output: og!
+
+/*¿Puede esta función descifrar un mensaje cifrado? No, esta función no puede descifrar un mensaje cifrado ya que no guarda información sobre el orden original de los caracteres intercambiados. 
+Para poder descifrar un mensaje cifrado con este algoritmo, necesitarías tener acceso a la clave utilizada (en este caso, el orden original de los caracteres), 
+lo cual no se conserva en el proceso de cifrado.*/

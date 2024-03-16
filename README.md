@@ -6,6 +6,8 @@
 
 Esta es una recolección de los ejercicios realizados durante el bootcamp de Códica. El objetivo es que otros desarrolladores puedan revisarlos y contrastasr sus soluciones con las mías. 
 
+Además del archivo main.js con el código de cada solución, también está disponible un archivo index.html que permite consultar el resultado de los ejercicios desde la consola del navegador. 
+
 -----
 
 ## Ejercicio 1
@@ -725,3 +727,74 @@ printReversedWordBySymbol(word);
 // => H
 
 ```
+
+## Ejercicio 67
+
+La función de la teoría tiene en cuenta el caso de las letras. Es decir, A y a son considerados caracteres diferentes. Implementa una versión de esta misma función en la que no importe el caso de las letras:
+
+```
+countChars('HexlEt', 'e'); // 2
+countChars('HexlEt', 'E'); // 2
+
+```
+
+## Ejercicio 68
+
+Implementa la función even(), que devuelve una nueva cadena formada por los caracteres pares de la cadena original.
+
+## Ejercicio 69
+
+Implementa la función filterString(), que recibe una cadena y un carácter, y devuelve una nueva cadena en la que se elimina el carácter pasado en todas sus posiciones. La capitalización de los caracteres es importante.
+
+```
+const str = 'If I look back I am lost';
+filterString(str, 'I'); // 'f  look back  am lost'
+filterString('zz Zorro', 'z'); // ' Zorro'
+
+```
+
+## Ejercicio 70
+
+Escriba una función makeItFunny() que reciba una cadena de texto y devuelva una copia de la cadena en la que cada elemento n-ésimo esté en mayúsculas. El valor de n se pasa como argumento a la función.
+
+Para determinar cada elemento n-ésimo, se utilizará el operador de resto %. Piense en cómo se puede utilizar.
+
+```
+const text = 'I never look back';
+// Cada tercer elemento
+makeItFunny(text, 3); // 'I NevEr LooK bAck'
+
+```
+
+## Ejercicio 71
+
+Implementa la función hasChar(), que verifica si una cadena contiene una letra específica (considerando la diferencia entre mayúsculas y minúsculas). La función toma dos parámetros:
+
+     - Una cadena
+     - La letra a buscar
+
+```
+hasChar('Hexlet', 'H'); // true
+hasChar('Hexlet', 'h'); // false
+hasChar('Awesomeness', 'm'); // true
+hasChar('Awesomeness', 'd'); // false
+
+```
+
+## Ejercicio 72
+
+Samwell descubrió que sus mensajes estaban siendo interceptados y leídos en la fortaleza "Gemelos", por lo que sus ataques dejaron de ser sorpresivos. Después de pensar un poco, desarrolló un programa que cifra los mensajes transmitidos utilizando el siguiente algoritmo. El programa recibe una cadena como entrada y cambia de lugar cada par de caracteres consecutivos. Si la longitud de la cadena es impar, el último carácter permanece en su lugar.
+
+
+```
+encrypt('move'); // omev
+encrypt('attack'); // taatkc
+// Si la longitud de la cadena es impar,
+// el último carácter permanece en su lugar
+encrypt('go!'); // og!
+
+```
+
+Implementa la función encrypt(), que recibe el mensaje original como entrada y devuelve el mensaje cifrado.
+
+Piensa. ¿Puede esta función descifrar un mensaje cifrado? 
