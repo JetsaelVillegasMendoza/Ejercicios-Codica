@@ -797,4 +797,4 @@ encrypt('go!'); // og!
 
 Implementa la función encrypt(), que recibe el mensaje original como entrada y devuelve el mensaje cifrado.
 
-Piensa. ¿Puede esta función descifrar un mensaje cifrado? 
+Piensa. ¿Puede esta función descifrar un mensaje cifrado?
