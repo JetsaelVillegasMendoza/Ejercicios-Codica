@@ -250,7 +250,8 @@ console.log(hurray);
 //Ejercicio 49
 const truncate = (text, length) =>{
     let slicedText = text.slice(0, length);
-    return slicedText;
+    let finalMessage = slicedText + "...";
+    return finalMessage;
 }
 
 text = "Jetsael"
